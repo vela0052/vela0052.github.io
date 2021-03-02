@@ -128,16 +128,19 @@ table {
     border-spacing: 0;
 }
 
+/* CSS for the website */
 html {
     font-size: 16px;
 }
 
+/* Container= main CSS */
 .container {
 
     background-color: rgba(255, 255, 255, 0.3) !important;
     margin: 0em 10em 0em 10em;
 }
 
+/* Body CSS */
 body {
     width: 100%;
 
@@ -146,6 +149,7 @@ body {
 }
 
 
+/* CSS for the Header */
 #head {
     color: white;
     clear: both;
@@ -159,6 +163,7 @@ body {
 
 }
 
+/* Mavigation bar CSS */
 nav ul {
     list-style: none;
     margin: 0;
@@ -201,21 +206,25 @@ nav {
     z-index: 999;
 }
 
+/* CSS for H2 */
 h2 {
     font-size: 1.5em;
 }
 
+/* CSS for Article */
 article {
     padding: 3em 1em 1em 1em;
 
 }
 
+/* CSS for the images */
 img {
-    width: 150px;
+    width: 200px;
     float: left;
     padding: 1em 1em 1em 1em;
 }
 
+/* CSS for H3 */
 h3 {
     font-size: 1.5em;
     padding: 1em 1em 1em 0.5em;
@@ -223,6 +232,7 @@ h3 {
 
 }
 
+/* CSS for Contact box and Form */
 #contact {
     width: 96%;
     border: 1px solid black;
@@ -273,6 +283,7 @@ button {
     cursor: pointer;
 }
 
+/* CSS for the Footer */
 footer {
     text-align: right;
     padding: 2em 2em 2em 2em;
