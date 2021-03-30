@@ -46,11 +46,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* -----------CSS RESET---------- */
+/* ----------------CSS RESET -----------------*/
 
-/* Custom Css */
+/* Custom CSS */
 
-html{
+html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     box-sizing: border-box;
@@ -59,18 +59,26 @@ body{
     line-height: 1.5;
 }
 
-h1,h2{
-    font-weight: bold;
-    /* top left-right bottom */
-    margin: 1em 0 0.5em
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    line-height: inherit;
 }
+
+h1,h2{
+    font-weight:  bold;
+    /* top left-right bottm */
+    margin: 1em 0 0.5em;
+}
+
 h1{
     font-size: 5.063rem;
-    
+
 }
 
 h2{
-    font-size: 3.375rem;   
+    font-size: 3.375rem;
 }
 
 p{
@@ -81,38 +89,66 @@ p{
     content: "";
     clear: both;
     display: table;
-}
+  }
 
 .container{
     padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
 /* Header */
 .desktop-logo{
     display: none;
 
 }
-.mobile-logo{
+
+.mobile-logo {
     max-width: 150px;
 }
+
 .banner{
     height: 600px;
-    background: grey url("../img/mobile-banner.jpg") no-repeat center bottom;
-    background-size: cover;
+    background: grey url("../img/mobile-banner.jpg") no-repeat center bottom ;
+    background-size:cover;
 }
+
 .banner h1 {
+    margin:0;
     padding-top: 250px;
     text-align: center;
     text-transform: uppercase;
-    margin: 0;
-    
 }
+
+/* Main Nav */
+.nav-list {
+    text-align: center;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: inherit;
+    padding: 1em 0;
+    display: block;
+}
+.nav-list a:hover {
+    background-color: #00ADD8;
+}
+
+.nav-list li {
+    border-bottom: solid 1px gray;
+}
+.current {
+    background-color: #00ADD8;
+}
+
 
 /* Main */
 
-/* Mobile App Section */
+/* Mobile app section */
 
 .app img{
-    width: 100%;
+    width:100%;
 }
 
 .app .btn{
@@ -121,24 +157,40 @@ p{
     border-radius: 4px;
     text-decoration: none;
     color: inherit;
-    display: inline-block;   
+    display: inline-block;
 }
 
 .app .btn:hover{
     background-color: #00ADD8;
 }
 
+/* Actions */
+.actions-list li {
+    max-width: 50%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.actions-list li img{
+    width: 100%;
+}
+.actions-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* Footer */
 
-footer{
+footer {
     border-top: 2px solid #00ADD8;
     margin-top: 1.5rem;
     padding: 1.5rem 0;
 }
-footer .copy{
+footer .copy {
     text-align: right;
 }
-footer a{
+
+footer a {
     color: inherit;
 }
 footer a:hover{
@@ -147,7 +199,7 @@ footer a:hover{
 
 /* Desktop styles */
 
-@media screen and (min-width:600px) {
+@media screen and (min-width: 600px) {
     html{
         font-size: 16px;
     }
@@ -155,19 +207,29 @@ footer a:hover{
         display: none;
     }
     .desktop-logo{
-        display: inline-block;
+        display:inline-block;
         max-width: 300px;
     }
-    .banner{
+    .banner {
         background-image: url("../img/desktop-banner.jpg");
     }
-    .banner h1{
+    .banner h1 {
         color: #fff;
     }
-    /* App Section */
+/* Main Nav */
+    .nav-list {
+        display: flex;
+    }
+    .nav-list li{
+        flex: 1;
+        border-bottom: none;
+        border-right: 1px solid gray;
+    }
 
-    .app img{
-        width: 40%;
+/*  App section */
+
+    .app img {
+        width:40%;
         float: left;
         margin-right: 1rem;
     }
@@ -175,3 +237,10 @@ footer a:hover{
         float: right;
     }
 }
+
+@media screen and (min-width: 800px) {
+    .actions-list li {
+        max-width: 20%;
+    }
+}
+
