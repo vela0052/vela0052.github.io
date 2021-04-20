@@ -175,8 +175,8 @@ p {
 .container {
 
     background-color: #222;
-    
-    
+
+
 }
 
 /* Main Nav */
@@ -571,9 +571,9 @@ th {
     padding: 10px 10px 10px 10px;
     background-color: #ffe6ac;
 }
-.te {
-    display: none;
-}
+
+
+
 td {
     padding: 10px 0px 10px 4px;
 }
@@ -796,10 +796,12 @@ footer span {
     #digitaltransform2 {
         height: 520px;
     }
+
     #digitaltransform3 {
         height: 520px;
     }
-    #digitaltransform4{
+
+    #digitaltransform4 {
         height: 520px;
     }
 
@@ -955,6 +957,7 @@ footer span {
     .contact .contact1:nth-child(2) {
         grid-area: c3;
     }
+
     .contact .contact1:nth-child(3) {
         grid-area: c2;
     }
@@ -971,20 +974,20 @@ footer span {
         background-color: #fff;
 
         margin: 2rem 0rem 1rem 1rem;
-        grid-column:1 / span 2;
+        grid-column: 1 / span 2;
     }
 
-    
+
 
     th {
         padding: 10px 1px 10px 10px;
         background-color: #ffe6ac;
     }
 
-    td{
-        padding:10px 0px 10px 4px;
+    td {
+        padding: 10px 0px 10px 4px;
 
-    } 
+    }
 
 
 }
