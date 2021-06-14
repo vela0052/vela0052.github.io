@@ -1,0 +1,289 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS Mobile First */
+
+body{
+    font-family: 'Monserrat', sans-serif;
+    font-size: 16px;
+    background-color: #f7f7ff;
+    color: #333131;
+    box-sizing: border-box;
+}
+header img{
+    width: 110px;
+}
+h1{
+    font-size: 3.5em;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+h2{
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 2em;
+}
+h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.4em;
+}
+p{
+    font-size: 1.1em;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+}
+header{
+    padding: 1.3em 4em;
+    margin: auto;
+}
+main{
+   
+    padding: 0 2.25rem;
+}
+.info p{
+    font-size: 21px;
+}
+.scooter{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form {
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: 0.8em;
+    margin-bottom: 4em;
+    padding: 0em 1em 1em 1em;
+    box-shadow: 1px 5px 10px #333131a1;
+    line-height: 2em;
+}
+.driveforminfo{
+    display: flex;
+    flex-direction: column;
+}
+.driveform input { 
+    font-family: "Montserrat", "sans-serif";
+    margin: 0.6em 0em;
+    padding: 0em;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 13px;
+    background-color: #f5f5f5;
+}
+
+.driveforminput label{
+    font-size: 1em;
+    line-height: 24px;
+    margin: 1rem;
+    text-align: center;
+}
+.driveform .inputdrive{
+    font-size: 1em;
+    color: #7c7b7b;
+    line-height: 24px;
+    padding-left: 10px;
+    padding-right:100px; 
+    width: auto; 
+}
+.firstname{
+    opacity:0.6 ;
+}
+input[type="checkbox" i]{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #57eeab;
+    margin-top: 1em;
+    border-radius: 10px;
+    border: none;
+    height: 60px;
+    width: 100%;
+    font-size: 1.8em;
+    font-weight: 550;
+    padding: 10px;
+}
+.agreement{
+    display: flex;
+    flex-direction: row;
+}
+.agreement label{
+    padding-top: 5px;
+    font-weight: 300;
+}
+.driveform p{
+    margin-top: 10px;
+
+    font-size: 0.9em;
+}
+.driveform a{
+    color: #ff8480;
+    text-decoration: none;
+}
+footer{
+    background-color: #fffd8c;
+    display: flex;
+    flex-direction: column;
+    padding: 1.2em 3em;
+}
+footer p{
+    padding-top: 10px;
+}
+.fform form{
+    display:grid;
+    grid-template-columns: 90px 100px;
+    grid-template-rows: 50px 100px;
+    grid-template-areas: 
+    "hours city city city"
+    "calculate calculate calculate calculate ";
+    margin-top: 20px;
+}
+.hour{
+    grid-area: hours;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    
+}
+.city{
+    grid-area: city;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    margin-left: 10px;
+}
+.calculate{
+    grid-area: calculate;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 18px;
+    height: 50px;
+    background-color: #ff8480;
+    color: #f7f7ff;
+    font-size: 1.5em; 
+    font-weight: bold;
+    width: 100%;
+}
+.social{
+    margin-top: 10px; 
+    text-align: center;
+}
+.fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram{
+    display: inline;
+    font-size: 37px;
+    color: #333131;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Media query for Tablet screens */
+
+@media screen and (min-width:768px){
+
+    main {
+        padding: 0 90px;
+    } 
+    h1{
+        font-size: 6em;
+    }
+    .info p{
+        font-size: 2em;
+        line-height: 1.2em;
+    }
+    .form p{
+        font-size: 20px;
+    }
+    .firstname{
+        opacity: 1;
+    }
+    .agreement label{
+        font-size: 20px;
+    }
+    .form{
+        padding: 2em;
+    }
+    form input[name="phone"] {
+        order: 1;
+    }
+    footer {
+        padding: 1.5em 6em;  
+    }
+    .fform p{
+        font-size: 20px;
+    }
+    .fform form{
+        display:grid;
+        grid-template-columns: 90px 100px;
+        grid-template-rows: 50px 0px;
+        grid-template-areas: 
+        "hours city city calculate calculate";
+        margin-top: 20px;
+    }
+    .calculate {
+        margin-left: 10px;
+        margin-top: 0px;
+        font-size: 1.3em;
+        height: 40px;
+        border-radius: 15px;
+    }
+
+}
+
+
+
