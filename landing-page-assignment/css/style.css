@@ -50,7 +50,7 @@ table {
 /* CSS Mobile First */
 
 body{
-    font-family: 'Monserrat', sans-serif;
+    font-family:'Montserrat';
     font-size: 16px;
     background-color: #f7f7ff;
     color: #333131;
@@ -76,7 +76,7 @@ h3{
 }
 p{
     font-size: 1.1em;
-    font-family: 'Monserrat', sans-serif;
+    font-family:'Montserrat';
     font-weight: 300;
     line-height: 24px;
 }
@@ -109,7 +109,7 @@ main{
     flex-direction: column;
 }
 .driveform input { 
-    font-family: "Montserrat", "sans-serif";
+    font-family:'Montserrat';
     margin: 0.6em 0em;
     padding: 0em;
     width: 100%;
@@ -151,6 +151,7 @@ button {
     width: 100%;
     font-size: 1.8em;
     font-weight: 550;
+    font-family:'Montserrat';
     padding: 10px;
 }
 .agreement{
@@ -190,7 +191,7 @@ footer p{
 }
 .hour{
     grid-area: hours;
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Montserrat';
     font-size: 1em;
     padding-left: 10px;
     border-radius: 10px;
@@ -200,7 +201,7 @@ footer p{
 }
 .city{
     grid-area: city;
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Montserrat';
     font-size: 1em;
     padding-left: 10px;
     border-radius: 10px;
@@ -218,6 +219,7 @@ footer p{
     color: #f7f7ff;
     font-size: 1.5em; 
     font-weight: bold;
+    font-family:'Montserrat';
     width: 100%;
 }
 .social{
@@ -285,5 +287,81 @@ footer p{
 
 }
 
+/* Media query for Desktop screens min-width: 1024px;*/
 
+@media screen and (min-width:1024px){
+    
+    main {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-template-areas: 
+        "info info scooter scooter form form";
+        margin:2em 0em;
+        padding: 0 70px;
+        padding-right: 50px;
+    }
+    header{
+        padding-bottom: 0em;
+    }
+    .info {
+        grid-area: info;
+
+    }
+    h1{
+        font-size: 5em;
+    }
+    .info p{
+        font-size: 1.5em;
+    }
+
+    .scooter {
+        grid-area: scooter;
+        width: 750px;
+        
+    }
+    .form{
+        grid-area: form;
+        margin: 0em;
+        margin-bottom: 0em;
+    }
+    footer{
+        display: grid;
+        grid-template-columns:repeat(3,1fr) ;
+        grid-template-rows:repeat(1,1fr) ;
+        grid-template-areas: 
+        "form not social";
+    }
+    .fform{
+        grid-area: form;
+    }
+    .social{
+        grid-area: social;
+        margin-top: 50px;
+
+    }
+    .social{
+        display: grid;
+        grid-template-columns:repeat(4,1fr) ;
+        grid-template-rows:repeat(1,1fr) ;
+        grid-template-areas: 
+        "instagram twitter facebook linkedin";
+    }
+    .facebook{
+        grid-area: facebook;
+    }
+    .instagram{
+        grid-area: instagram;
+    }
+    .twitter{
+        grid-area: twitter;
+    }
+    .linkedin{
+        grid-area: linkedin;
+    }
+
+
+
+
+}
 
