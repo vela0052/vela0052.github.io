@@ -46,9 +46,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* -------------------CSS Reset--------------------- */
 
 /* CSS Mobile First */
-
+/* Body style giving the font family Montserrat to the mobile screen  */
 body{
     font-family:'Montserrat';
     font-size: 16px;
@@ -56,9 +57,12 @@ body{
     color: #333131;
     box-sizing: border-box;
 }
+/* giving the logo the width */
 header img{
     width: 110px;
 }
+/* Styling all the fonts for the website, giving
+ the font sizes the line heights for each element */
 h1{
     font-size: 3.5em;
     font-weight: bold;
@@ -80,6 +84,7 @@ p{
     font-weight: 300;
     line-height: 24px;
 }
+/* stuling the headera and main giving the padding for each one */
 header{
     padding: 1.3em 4em;
     margin: auto;
@@ -91,10 +96,13 @@ main{
 .info p{
     font-size: 21px;
 }
+/* for the scooter image, i give margins to the mobile screen */
 .scooter{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+/* Styling the apply form with background color border radius
+margins paddings and box shadow for the form box */
 .form {
     background-color: #ffffff;
     border-radius: 20px;
@@ -104,10 +112,13 @@ main{
     box-shadow: 1px 5px 10px #333131a1;
     line-height: 2em;
 }
+/* Making the Flex column for the apply form */
 .driveforminfo{
     display: flex;
     flex-direction: column;
 }
+/* For each element onf the Apply form, giving the style
+to label, border, margin and fonts */
 .driveform input { 
     font-family:'Montserrat';
     margin: 0.6em 0em;
@@ -133,15 +144,17 @@ main{
     padding-right:100px; 
     width: auto; 
 }
+/* Giving the opacity for the first name label for the mobile screen */
 .firstname{
     opacity:0.6 ;
 }
-input[type="checkbox" i]{
+/* Style for the checkbox */
+input[type="checkbox"]{
     width: 25px;
     height: 25px;
     margin-right: 10px;
 }
-
+/* Styling for the button in the apply form each element of the button */
 button {
     background-color: #57eeab;
     margin-top: 1em;
@@ -150,10 +163,11 @@ button {
     height: 60px;
     width: 100%;
     font-size: 1.8em;
-    font-weight: 550;
+    font-weight: 700;
     font-family:'Montserrat';
     padding: 10px;
 }
+/* for the agreement i used flex to put the checkbox and the text aligned */
 .agreement{
     display: flex;
     flex-direction: row;
@@ -171,6 +185,7 @@ button {
     color: #ff8480;
     text-decoration: none;
 }
+/* Style for the footer section giving a flex order */
 footer{
     background-color: #fffd8c;
     display: flex;
@@ -180,6 +195,8 @@ footer{
 footer p{
     padding-top: 10px;
 }
+/* For the form in the footer I put the grid to order the elements 
+with a grid template area */
 .fform form{
     display:grid;
     grid-template-columns: 90px 100px;
@@ -189,6 +206,8 @@ footer p{
     "calculate calculate calculate calculate ";
     margin-top: 20px;
 }
+/* For each element of the footer form I make a style to the text and 
+the labels and the button as well */
 .hour{
     grid-area: hours;
     font-family:'Montserrat';
@@ -222,6 +241,8 @@ footer p{
     font-family:'Montserrat';
     width: 100%;
 }
+/* In the social area I Put the icones aligned in the center
+and inline each icon with style because I take it from font awesome */
 .social{
     margin-top: 10px; 
     text-align: center;
@@ -237,7 +258,8 @@ footer p{
 /* Media query for Tablet screens */
 
 @media screen and (min-width:768px){
-
+/* For each element for this screen i fixed it to fix the design for the h1
+, paragraphs */
     main {
         padding: 0 90px;
     } 
@@ -251,6 +273,7 @@ footer p{
     .form p{
         font-size: 20px;
     }
+    /* Deleting the opacity of the mobile screen for the first name label */
     .firstname{
         opacity: 1;
     }
@@ -260,15 +283,20 @@ footer p{
     .form{
         padding: 2em;
     }
+    /* In the apply form for the tables and desktop the order changes
+    I changed it fixing with the design */
     form input[name="phone"] {
         order: 1;
     }
+    /* Giving a padding for the footer */
     footer {
         padding: 1.5em 6em;  
     }
     .fform p{
         font-size: 20px;
     }
+    /* Giving the footer form a grid to order the elements in it
+    to fix to the design, I choose 2 columns and 1 row */
     .fform form{
         display:grid;
         grid-template-columns: 90px 100px;
@@ -277,6 +305,7 @@ footer p{
         "hours city city calculate calculate";
         margin-top: 20px;
     }
+    /* Giving style to the form button for tablet screens */
     .calculate {
         margin-left: 10px;
         margin-top: 0px;
@@ -290,7 +319,9 @@ footer p{
 /* Media query for Desktop screens min-width: 1024px;*/
 
 @media screen and (min-width:1024px){
-    
+    /* For the Desktop Screen I used a grid to display 
+    all the elements in a row and with 6 columns using a
+    grid template area for it */
     main {
         display: grid;
         grid-template-columns: repeat(6,1fr);
@@ -325,6 +356,8 @@ footer p{
         margin: 0em;
         margin-bottom: 0em;
     }
+    /* For the footer I used grid as well with 3 columns and 1 row to display
+    the form and the social according to the design  */
     footer{
         display: grid;
         grid-template-columns:repeat(3,1fr) ;
@@ -340,6 +373,8 @@ footer p{
         margin-top: 50px;
 
     }
+    /* The social has a grid because for the desktop screen
+    the oreder of the icons changes */
     .social{
         display: grid;
         grid-template-columns:repeat(4,1fr) ;
