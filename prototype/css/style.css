@@ -300,6 +300,7 @@ footer h3{
         grid-template-areas:
         "menu promo"
         "flavour shapes";
+        position:relative;
     }
     .menu{
         grid-area: menu;
@@ -313,6 +314,7 @@ footer h3{
     .shapes{
         grid-area: shapes;
     }
+    
     .center {
         display: block;
         margin-left: auto;
@@ -326,9 +328,10 @@ footer h3{
         text-align: center;
         top: 25%;
         left: 42%;
-        /* margin-top: -30px;
-        margin-left: -70px; */
+        margin-top: 70px;
+        margin-left: -10px;
     }
+    
     header{
         justify-content: space-around;
     }
