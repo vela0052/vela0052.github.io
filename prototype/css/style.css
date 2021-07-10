@@ -192,21 +192,7 @@ header h1 {
     margin-left: 70px;
 }
 
-/* .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-    height: 15%;
-    border-radius: 50%;
-    padding: 2rem;
-    background-color: white;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -100px;
-  margin-left: -100px;
-} */
+
 .center{
     display: block;
     margin-left: auto;
@@ -281,4 +267,71 @@ header h1 {
     text-align: center;
     color: white;
     line-height: 300px;
+}
+.fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram{
+    display: inline;
+    font-size: 37px;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.social{
+    margin-top: 10px; 
+    text-align: center;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    line-height: 1.5rem;  
+    background-color: #ffe98a;
+    color: black;
+}
+footer h3{
+    text-align: center;
+    padding-top: 30px;
+}
+@media screen and (min-width:768px){
+    .content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas:
+        "menu promo"
+        "flavour shapes";
+    }
+    .menu{
+        grid-area: menu;
+    }
+    .promo{
+        grid-area: promo;
+    }
+    .flavour{
+        grid-area: flavour;
+    }
+    .shapes{
+        grid-area: shapes;
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10%;
+        height: 15%;
+        border-radius: 50%;
+        padding: 2rem;
+        background-color: white;
+        position: absolute;
+        text-align: center;
+        top: 25%;
+        left: 42%;
+        /* margin-top: -30px;
+        margin-left: -70px; */
+    }
+    header{
+        justify-content: space-around;
+    }
+    
+
 }
