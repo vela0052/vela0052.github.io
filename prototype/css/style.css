@@ -335,6 +335,22 @@ footer h3{
     header{
         justify-content: space-around;
     }
+
+}
+@media screen and (min-width:1024px){
     
+    footer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-template-areas: 
+        "copy not social";
+    }
+    .footer h3{
+        grid-area: copy;
+    }
+    .social{
+        grid-area: social;
+    }
 
 }
