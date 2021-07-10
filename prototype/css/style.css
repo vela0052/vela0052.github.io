@@ -188,7 +188,7 @@ header h1 {
 }
 
 .cart img {
-    width: 50px;
+    width: 40px;
     margin-left: 70px;
 }
 
@@ -205,6 +205,10 @@ header h1 {
     background: url("../img/menupic.jpg") no-repeat center center;
     background-size: cover;
     height: 300px;
+    
+}
+.content a{
+    text-decoration: none;
 }
 
 .opacity {
