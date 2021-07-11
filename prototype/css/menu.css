@@ -315,6 +315,47 @@ nav{
     display: block;
 }
 
+.subscribe{
+    text-align: center;
+    color:white;
+    background-image: url("../img/icepic2.jpg");
+    opacity: 1;
+    background-size:cover;
+    height: 300px;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    
+  }
+  .input-style{
+      background: rgba(231, 226, 226, 0.25);
+      font-family: coquette,sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      width: 12em;
+      padding: 0.3em 0;
+      color: black; 
+  }
+  .input-style::placeholder{
+    color: rgb(255, 255, 255, 0.5);
+  }
+  .subscribe .btn{
+      padding: 0.5em 0;
+      width: 10em;
+      font-size: 20px;
+      font-weight: 500;
+      color: white;
+      margin: 1em 2em;
+      border: none;
+      border-radius: 12px;
+      background: #ce84ad;
+      font-family: coquette,sans-serif;
+      font-size: 1.5rem;
+
+  }
+  .subscribe .text-md{
+      font-weight: 600;
+      font-size: 1.3rem;
+  }
 .fa-facebook, .fa-twitter, .fa-linkedin, .fa-instagram{
     display: inline;
     font-size: 37px;
