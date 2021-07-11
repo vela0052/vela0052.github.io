@@ -335,6 +335,7 @@ nav{
       padding: 0.3em 0;
       color: black; 
   }
+  
   .input-style::placeholder{
     color: rgb(255, 255, 255, 0.5);
   }
