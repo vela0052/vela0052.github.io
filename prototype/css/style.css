@@ -163,6 +163,7 @@ p {
     margin: 0rem 0;
     font-size: 0.8rem;
     padding: 1rem;
+    font-family: coquette,sans-serif;
 }
 
 header {
@@ -296,6 +297,10 @@ footer h3{
     text-align: center;
     padding-top: 30px;
 }
+.inf p{
+    text-align: center;
+    padding: 0;
+}
 @media screen and (min-width:768px){
     .content{
         display: grid;
@@ -339,6 +344,10 @@ footer h3{
     header{
         justify-content: space-around;
     }
+    .inf p{
+        text-align: center;
+        padding: 0;
+    }
 
 }
 @media screen and (min-width:1024px){
@@ -356,5 +365,14 @@ footer h3{
     .social{
         grid-area: social;
     }
+    .inf p{
+        text-align: center;
+        padding: 0;
+    }
+    .inf{
+        grid-area: copy;
+
+    }
+    
 
 }
