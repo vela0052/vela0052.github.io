@@ -197,7 +197,7 @@ footer{
 
 }
 .copy h3{
-    font-size: 0.95rem;
+    font-size: 0.7rem;
 }
 .social{
      grid-area: social;
@@ -528,6 +528,9 @@ iframe{
     .design1 .opa4 p{
         text-align: center;
     }
+    .copy h3{
+        font-size: 0.95rem;
+    }
     blockquote{
         text-align: center;
     }
@@ -619,6 +622,9 @@ iframe{
     #button1{
         margin-top: 0em;
     
+    }
+    .copy h3{
+        font-size: 0.95rem;
     }
     blockquote{
         margin-top: 80px;
