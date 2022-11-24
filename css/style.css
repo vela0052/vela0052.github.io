@@ -128,7 +128,14 @@ blockquote{
     /* padding-bottom: 300px; */
     margin-top: 100px;
 }
+.navbar-brand img{
+    width: 50 !important;
+    height: 50 !important;
+}
+#button1{
+    margin-top: 1em;
 
+}
 
 .opa1, .opa2, .opa3, .opa4 {
     width: 100%;
@@ -477,7 +484,10 @@ iframe{
         padding-left: 25px;
         padding-right: 60px;
     }
+    #button1{
+        margin-top: 0em;
     
+    }
     
     .footer{
         display: grid;
@@ -605,6 +615,10 @@ iframe{
     .quote{
         grid-area: quote;
         
+    }
+    #button1{
+        margin-top: 0em;
+    
     }
     blockquote{
         margin-top: 80px;
