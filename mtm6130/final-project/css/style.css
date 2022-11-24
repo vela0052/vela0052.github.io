@@ -1,0 +1,993 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ----------------CSS RESET -----------------*/
+
+/* Custom CSS */
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    background-color: #222;
+}
+
+h1 {
+    font-size: 3.5rem;
+
+}
+
+h2 {
+    font-size: 2.375rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p {
+    margin: 0rem 0;
+    font-size: 0.8rem;
+    padding: 1rem;
+}
+
+.container {
+
+    background-color: #222;
+
+
+}
+
+/* Main Nav */
+.nav-list {
+    text-align: center;
+    background-color: #222;
+    padding: 0;
+}
+
+.masterhead {
+    background-color: #c78c06;
+    margin: 1rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+
+    padding: 1em 0;
+    display: block;
+    color: #c78c06;
+}
+
+.current {
+    background-color: #c78c06;
+    color: black !important;
+}
+
+.nav-list a:hover {
+    background-color: #c78c06;
+    color: inherit;
+}
+
+.con {
+    background-color: #fff;
+    padding: 2rem 1rem 0rem 1rem;
+}
+
+.nav-list li {
+    border-bottom: solid 1px #222;
+}
+
+.example {
+    text-align: center;
+    background-color: #222;
+    display: block;
+    padding: 1em 0em;
+
+
+}
+
+.example input[type=text] {
+
+    padding: 10px 290px 10px 4px;
+    border: none;
+    margin-top: 0.2rem;
+    margin-right: 1px;
+    font-size: 14px;
+}
+
+.example button[type=submit] {
+
+    border-color: #c78c06;
+    padding: .6rem 1rem;
+    background-color: #222;
+}
+
+.fa-search:before {
+
+    color: #c78c06;
+}
+
+/* Welcome Section */
+.welcome {
+    height: 220px;
+    background: grey url("../img/main-banner.jpg") no-repeat center bottom;
+    background-size: cover;
+    padding-bottom: 300px;
+}
+
+.opacity {
+    background-color: rgba(34, 34, 34, 0.5);
+}
+
+.opa {
+
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    padding: 100px 0px 10px 0px;
+}
+
+.opa h1 {
+    font-weight: bold;
+    color: #fff;
+    padding: 1rem;
+}
+
+.opa p {
+    color: #fff;
+
+}
+
+.btn-connect {
+    text-decoration: none;
+    padding: 30px;
+    color: inherit;
+    display: inline-block;
+    background-color: #c78c06;
+    margin: 10px;
+}
+
+/* About us */
+.aboutus {
+    background-color: #ffe6ac;
+}
+
+.imgabout {
+    width: 460px;
+    padding: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.aboutus1 h2 {
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+/* Services section */
+.services {
+    background-color: #fff;
+    padding: 0.2rem 1rem 1rem 1rem;
+}
+
+.serv {
+    background-color: #fff;
+    padding: 2rem 1rem 0rem 1rem;
+}
+
+h2 {
+    font-weight: bold;
+
+}
+
+
+.digitaltransform {
+    background-color: #ffe6ac;
+    margin-top: 10px;
+
+
+}
+
+.digitaltransform img {
+    width: 100%;
+
+}
+
+.digitaltransform h3 {
+    font-weight: bold;
+    padding: 0.5em;
+
+}
+
+.btn-digital1 {
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+    display: inline-block;
+    background-color: #222;
+    margin: 10px;
+
+}
+
+.btn-digital2 {
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+    display: inline-block;
+    background-color: #222;
+    margin: 10px;
+
+}
+
+.btn-digital3 {
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+    display: inline-block;
+    background-color: #222;
+    margin: 10px;
+
+}
+
+.btn-digital4 {
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+    display: inline-block;
+    background-color: #222;
+    margin: 10px;
+
+}
+
+.btn-digital5 {
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+    display: inline-block;
+    background-color: #222;
+    margin: 10px;
+
+}
+
+/* Vision Section */
+.vision {
+    width: 100%;
+
+    background: grey url("../img/vision.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.vision h3 {
+    color: #fff;
+    font-weight: bold;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.vision p {
+    color: #fff;
+}
+
+.btn-vision {
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+    display: inline-block;
+    background-color: rgba(34, 34, 34, 0.5);
+    border: 1px solid #c78c06;
+    margin: 10px;
+}
+
+/* Team section */
+
+.team1 {
+    background-color: #fff;
+}
+
+.team1 h2 {
+    font-weight: bold;
+    color: #222;
+    margin: 0rem 1rem;
+    padding: 1rem 0rem;
+    background-color: #fff;
+
+}
+
+.teamj,
+.teamb {
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+.teamj img {
+    width: 100%;
+
+
+}
+
+.teamj {
+    background-color: #ffe6ac;
+}
+
+.teamj h3 {
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.teamj h4 {
+    font-weight: bold;
+    /* padding: 0.5rem; */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-bottom: 1px solid #c78c06;
+}
+
+.teamb p {
+
+    padding: 0.5rem 0.5rem 1rem 0.5rem !important;
+}
+
+.teamb img {
+    width: 100%;
+
+
+}
+
+.teamb {
+    background-color: #ffe6ac;
+}
+
+.teamb h3 {
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.teamb h4 {
+    font-weight: bold;
+    /* padding: 0.5rem; */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-bottom: 1px solid #c78c06;
+}
+
+.teamb p {
+
+    padding: 0.5rem 0.5rem 1rem 0.5rem !important;
+}
+
+.team2 {
+    display: none;
+}
+
+/* Contact */
+
+.contact {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.contact h2 {
+    font-weight: bold;
+    padding-bottom: 15px;
+
+}
+
+.message h3 {
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.message input[type="text"i] {
+    padding: 10px 330px 10px 4px;
+    margin-top: 0.2rem;
+    margin-right: 1px;
+    font-size: 14px;
+}
+
+.message input[type="email"i] {
+    padding: 10px 330px 10px 4px;
+    margin-top: 0.2rem;
+    margin-right: 1px;
+    font-size: 14px;
+}
+
+.message textarea {
+    padding: 100px 300px 10px 4px;
+    margin-top: 0.2rem;
+    margin-right: 1px;
+    font-size: 14px;
+}
+
+.message label {
+    font-size: 12px;
+}
+
+button {
+    color: #c78c06;
+    background-color: #222;
+}
+
+.contact3 {
+    padding-top: 1rem;
+}
+
+.contact3 h3 {
+    font-weight: bold;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+
+th {
+    padding: 10px 10px 10px 10px;
+    background-color: #ffe6ac;
+}
+
+
+
+td {
+    padding: 10px 0px 10px 4px;
+}
+
+.contact1 h3 {
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+}
+
+footer p {
+    color: #c78c06;
+    font-size: 0.8rem;
+}
+
+footer span {
+    padding: 1rem;
+    color: #c78c06;
+    font-size: 0.8rem;
+}
+
+
+
+/* ---------------- Desktop Styles -----------------*/
+
+@media screen and (min-width: 760px) {
+    html {
+        font-size: 16px;
+    }
+
+    .content {
+        background-color: #fff;
+
+    }
+
+    .masterhead {
+        background-color: #222;
+        margin: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    .masterhead img {
+
+        padding-right: 50px;
+        padding-left: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .nav-list {
+        display: flex;
+
+
+    }
+
+    .nav-list li {
+        flex: 1;
+        border-bottom: none;
+        align-items: center;
+
+    }
+
+    .example input[type=text] {
+        padding: 10px 20px 10px 4px;
+        border: none;
+        margin-top: 0.2rem;
+        margin-right: 1px;
+        font-size: 14px;
+    }
+
+    .nav-list a {
+        text-decoration: none;
+
+        padding: 1.5em 2rem;
+        text-align: center;
+
+    }
+
+    .option {
+        width: 120px;
+    }
+
+    .opacity {
+        margin-right: 7rem;
+        margin-left: 7rem;
+    }
+
+    .opa {
+        padding-top: 70px;
+
+    }
+
+    .welcome {
+        height: 300px;
+        background: grey url("../img/main-banner.jpg") no-repeat center;
+        background-size: cover;
+        padding-bottom: 150px;
+    }
+
+    .aboutus {
+        display: grid;
+        padding-left: 100px;
+        padding-right: 100px;
+
+    }
+
+    .aboutus .aboutus1:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .aboutus .aboutus1:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+        padding-top: 20px;
+    }
+
+    .services {
+        display: grid;
+        padding-left: 100px;
+        padding-right: 100px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "dig1 dig1 dig1 dig2 dig2 dig2 "
+            "dig3 dig3 dig4 dig4 dig5 dig5 "
+
+        ;
+
+
+    }
+
+    .services .digitaltransform:nth-child(1) {
+        grid-area: dig1;
+        margin-right: 27px;
+    }
+
+    .services .digitaltransform:nth-child(2) {
+        grid-area: dig2;
+        margin-right: 27px;
+
+    }
+
+    .services .digitaltransform:nth-child(3) {
+        grid-area: dig3;
+        margin-right: 27px;
+
+    }
+
+    .services .digitaltransform:nth-child(4) {
+        grid-area: dig4;
+
+        margin-right: 27px;
+    }
+
+    .services .digitaltransform:nth-child(5) {
+        grid-area: dig5;
+        margin-right: 27px;
+    }
+
+    .btn-digital1 {
+        text-decoration: none;
+        width: 450px;
+        text-align: center;
+        color: #fff;
+        display: inline-block;
+        background-color: #222;
+        margin: 10px;
+    }
+
+    .btn-digital2 {
+        text-decoration: none;
+        width: 450px;
+        text-align: center;
+        color: #fff;
+        display: inline-block;
+        background-color: #222;
+        margin: 10px;
+    }
+
+    .btn-digital3 {
+        text-decoration: none;
+        width: 270px;
+        text-align: center;
+        color: #fff;
+        display: inline-block;
+        background-color: #222;
+        margin: 10px;
+    }
+
+    .btn-digital4 {
+        text-decoration: none;
+        width: 270px;
+        text-align: center;
+        color: #fff;
+        display: inline-block;
+        background-color: #222;
+        margin: 10px;
+    }
+
+    .btn-digital5 {
+        text-decoration: none;
+        width: 270px;
+        text-align: center;
+        color: #fff;
+        display: inline-block;
+        background-color: #222;
+        margin: 10px;
+    }
+
+    #digitaltransform2 {
+        height: 520px;
+    }
+
+    #digitaltransform3 {
+        height: 520px;
+    }
+
+    #digitaltransform4 {
+        height: 520px;
+    }
+
+    .vision {
+        padding: 0rem 1rem;
+    }
+
+    .vision p {
+        padding-right: 8rem !important;
+        padding-left: 8rem !important;
+    }
+
+    .vision h3 {
+        padding-left: 8rem !important;
+    }
+
+    .btn-vision {
+        margin-left: 8rem !important;
+    }
+
+    .team1 {
+        display: none;
+    }
+
+    .te {
+        background-color: #fff;
+        padding: 2rem 1rem 0rem 6rem;
+    }
+
+    .team2 {
+        display: grid;
+        padding-left: 100px;
+        padding-right: 100px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "t1 t2 "
+            "t3 t4 "
+
+        ;
+
+
+    }
+
+    .team2 .team3:nth-child(1) {
+        grid-area: t1;
+
+    }
+
+    .team2 .team3:nth-child(2) {
+        grid-area: t2;
+
+    }
+
+    .team2 .team3:nth-child(3) {
+        grid-area: t4;
+
+    }
+
+    .team2 .team3:nth-child(4) {
+        grid-area: t3;
+
+    }
+
+    .team12 {
+        background-color: #fff;
+    }
+
+    .team2 h2 {
+        font-weight: bold;
+        color: #222;
+        margin: 0rem 1rem;
+        padding: 1rem 0rem;
+        background-color: #fff;
+
+    }
+
+    .team3 img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .team2 {
+        background-color: #fff;
+    }
+
+    .team3 h3 {
+        font-weight: bold;
+        padding: 0.5rem;
+    }
+
+    .team3 h4 {
+        font-weight: bold;
+
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border-bottom: 1px solid #c78c06;
+    }
+
+    .team3 p {
+
+        padding: 0.5rem 0.5rem 1rem 0.5rem !important;
+    }
+
+    .team3 img {
+        width: 100%;
+
+
+    }
+
+    .team3 {
+        background-color: #ffe6ac;
+    }
+
+    .team3 h3 {
+        font-weight: bold;
+        padding: 0.5rem;
+    }
+
+    .team3 h4 {
+        font-weight: bold;
+
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border-bottom: 1px solid #c78c06;
+    }
+
+    .team3 p {
+
+        padding: 0.5rem 0.5rem 1rem 0.5rem !important;
+    }
+
+    .contact {
+        display: grid;
+        padding-left: 100px;
+        padding-right: 100px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas:
+            "c1 c2 "
+
+
+        ;
+
+
+    }
+
+    .contact .contact1:nth-child(1) {
+        grid-area: c1;
+    }
+
+    .contact .contact1:nth-child(2) {
+        grid-area: c3;
+    }
+
+    .contact .contact1:nth-child(3) {
+        grid-area: c2;
+    }
+
+    .con {
+        background-color: #fff;
+        padding: 2rem 1rem 0rem 6rem;
+    }
+
+    .contact3 {
+        width: 100%;
+        font-weight: bold;
+        padding-bottom: 15px;
+        background-color: #fff;
+
+        margin: 2rem 0rem 1rem 1rem;
+        grid-column: 1 / span 2;
+    }
+
+
+
+    th {
+        padding: 10px 1px 10px 10px;
+        background-color: #ffe6ac;
+    }
+
+    td {
+        padding: 10px 0px 10px 4px;
+
+    }
+
+
+}

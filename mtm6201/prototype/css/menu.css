@@ -1,0 +1,460 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ------CSS Reset-------- */
+/* ------ CSS for Menu page ------ */
+html {
+    box-sizing: border-box;
+}
+
+/* Including the font family for the Website */
+body {
+    font-family: lust-script-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+
+}
+
+/* Font styles for the site */
+h1 {
+    font-size: 3rem;
+
+}
+
+h2 {
+    font-size: 2.375rem;
+}
+
+h3 {
+    font-size: 1rem;
+    font-family: coquette, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    margin: 0rem 0;
+    font-size: 0.8rem;
+    padding: 1rem;
+    font-family: coquette, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* The header uses flex row for all the elements of the header */
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #ce84ad;
+}
+
+/* Style for the logo */
+.logo {
+    width: 100px;
+    padding-right: 10px;
+    padding-left: 20px;
+
+}
+
+/*  style for the title H1 of the page */
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 20px;
+}
+
+/* Style for the shopping cart icon */
+.cart img {
+    width: 40px;
+    margin-left: 70px;
+}
+
+/* Style for the nav container  */
+nav {
+    margin-right: 100px;
+
+}
+
+/* Style for the dropdown menu container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the content inside the dropdown container, such as the h1, the logo and the nav list */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 1rem;
+    background-color: #ce84ad;
+    border-radius: 5px;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+}
+
+/* giving the display that when the user hovers the bars icon, the menu drops down */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style for the logo in the dropdown menu */
+.pp-img-dd img {
+    height: 100%;
+    width: 7rem;
+}
+
+/* position and styling for the content in the info area */
+.dropdown .info {
+    margin-bottom: 1rem;
+}
+
+.dropdown .info h1 {
+    font-family: lust-script-display, sans-serif;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 0.5rem;
+}
+
+.dropdown-content ul li a {
+    font-family: lust-script-display, sans-serif;
+    padding: 0rem;
+    margin-bottom: 1em;
+    line-height: 2rem;
+    text-decoration: none;
+    border-bottom: solid 2px rgba(1, 1, 1, 0.5);
+    color: white;
+}
+
+/* Style for the Menu section the section padding container, the H1 and subtitle */
+.section-padding {
+    padding-bottom: 900px;
+    padding-top: 100px;
+}
+
+.text-center {
+    margin-bottom: 35px;
+}
+
+.text-center h1 {
+    text-align: center;
+    font-family: lust-script-display, sans-serif;
+    color: #ce84ad;
+    font-weight: 300;
+    font-size: 46px;
+}
+
+.text-center p {
+    text-align: center;
+    color: #ccc;
+}
+
+/* Style for the Menu list floating it to the left side and positioning relative */
+.menu-ice {
+    width: 90%;
+    float: left;
+    padding: 15px;
+    position: relative;
+
+
+}
+
+/* For the subtitle of each list giving the style */
+.menu-ice .menu-subtitle {
+    display: block;
+    float: left;
+    color: rgb(177, 177, 177);
+    font-family: coquette, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+/* Style for the menu title */
+.menu-ice .menu-title {
+
+    font-family: coquette, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ce84ad;
+}
+
+/* Style for the span in the cleafix section */
+.menu-ice span.clearfix {
+    position: relative;
+    display: block;
+}
+
+/* Styling the dotted line for each menu item  */
+.menu-ice .menu-line {
+    position: absolute;
+    bottom: 6px;
+    border-bottom: 1px dotted rgba(0, 0, 0, .3);
+    margin-left: .6rem;
+    margin-right: .6rem;
+    left: 166px;
+    right: 44px;
+}
+
+/* Style for the price  */
+.menu-ice .menu-price {
+
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/* style for the subscribe container, centering it and putting the background image */
+.subscribe {
+    text-align: center;
+    color: white;
+    background-image: url("../img/icepic2.jpg");
+    opacity: 1;
+    background-size: cover;
+    height: 300px;
+    padding-top: 2em;
+    padding-bottom: 3em;
+
+}
+/* Style for the input in the Subscribe section */
+.input-style {
+    background: rgba(231, 226, 226, 0.25);
+    font-family: coquette, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    width: 12em;
+    padding: 0.3em 0;
+    color: black;
+}
+/* Style for the placeholder in the subscribe section */
+.input-style::placeholder {
+    color: rgb(255, 255, 255, 0.5);
+}
+/* Style for the button in the subscribe section */
+.subscribe .btn {
+    padding: 0.5em 0;
+    width: 10em;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    margin: 1em 2em;
+    border: none;
+    border-radius: 12px;
+    background: #ce84ad;
+    font-family: coquette, sans-serif;
+    font-size: 1.5rem;
+
+}
+/* Style for the text inside the subscribe section */
+.subscribe .text-md {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+/* style for each social media icon */
+.fa-facebook,
+.fa-twitter,
+.fa-linkedin,
+.fa-instagram {
+    display: inline;
+    font-size: 37px;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* align for the social container */
+.social {
+    margin-top: 10px;
+    text-align: center;
+}
+/* Flex column for the mobile screens, giving style to the footer section  */
+footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    line-height: 1.5rem;
+    background-color: #ce84ad;
+    color: black;
+}
+
+footer h3 {
+    text-align: center;
+    padding-top: 30px;
+    font-family: lust-script-display, sans-serif;
+}
+
+.inf p {
+    text-align: center;
+    padding: 0;
+}
+/* Media Query for screens 768px and more */
+@media screen and (min-width:768px) {
+    /* Styling the container div to be centered */
+    .container {
+        padding: 0 10rem;
+    }
+    
+    header {
+        justify-content: space-around;
+    }
+/* For the content using Grid and position relative to be able to put the logo in the center */
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas:
+            "copy not social";
+    }
+/* Giving grid areas to the child containers */
+    .inf {
+        grid-area: copy;
+
+    }
+/* Aligning the footer section */
+    .inf p {
+        text-align: center;
+    }
+/* Giving grid areas to the child containers */
+    .social {
+        grid-area: social;
+    }
+}

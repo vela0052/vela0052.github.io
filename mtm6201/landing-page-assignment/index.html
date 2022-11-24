@@ -1,0 +1,87 @@
+<!-- 
+    Julian Ricardo Vela Bernate
+    Landing Page Assigment
+    Responsive Web design II
+    Algonquin College
+    IMD 2021
+ -->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head of the site including all the metatags and links -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link the Css style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Connecting the font kits and the google font apis -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7f4096dde2.js" crossorigin="anonymous"></script>
+    <!-- Title of the site -->
+    <title>Dash Drive with us</title>
+    <link rel="shortcut icon" type="image" href="images/favicon.ico"/>
+</head>
+<body>
+    <!-- Header tag including the Dash logo taken from the images folder -->
+    <header>
+        <img src="images/logo/logo.png" alt="logo">
+    </header>
+    <!-- Main section  -->
+    <main>
+        <!-- The H1 for the information about the Landing page and the paragraph information as well. -->
+        <section class="info">
+            <h1>Want to be your own boss?</h1>
+            <p>
+                Start today and make up to $30/hr driving your own vehicle with Dash!
+            </p>
+            <!-- Image of the lady in scooter taken from the svg in the images folder -->
+        </section>
+        <div class="scooter">
+            <img src="images/bg-image/scooter.svg" alt="scooter">
+        </div>
+        <!-- Apply Form including all the information about the subject and the agreements terms checkbox, 
+            Submit button to send the information, if already applied, a tag for the application status link  -->
+        <section class="form">
+            <h2>Apply now</h2>
+            <p>Enter your info below to get started</p>
+            <form action="submit" class="driveform">
+                <div class="driveforminfo">
+                <input class="inputdrive firstname" type="text" name="firstname" id="firstname" placeholder="First Name">
+                <input class="inputdrive" type="text" name="lastname" id="lastname" placeholder="Last Name">
+                <input class="inputdrive" type="text" name="phone" id="phone" placeholder="Phone number">
+                <input  class="inputdrive" type="text" name="email" id="email" placeholder="Email Address">
+                </div>
+                <div class="agreement">
+                    <input type="checkbox" name="agreement" id="agreement">
+                    <label for="agreements">I agree to dash terms</label>
+                </div>
+                <button type="submit">DRIVE WITH US</button>
+                <p>Already applied? <a href="#">Check your application status here</a></p>
+            </form>
+        </section>
+    </main>
+    <!-- Footer section with the information about how can the subject earn with dash, 
+        with a form calculator of hours and the city -->
+    <footer>
+        <div class="fform">
+            <h3>See how much you can earn with Dash.</h3>
+            <p>how many hours do you want to drive with us this week?</p>
+            <form action="calculator">
+                <input class="hour" type="number" name="hours" id="hours" placeholder="Hours">
+                <input class="city" type="text" name="city" id="city" placeholder="City">
+                <button class="calculate" type="submit">CALCULATE</button>
+            </form>
+        </div>
+        <!-- Social section including the icons and the link to each social media platform, 
+            icons taken from fontawesome  -->
+        <div class="social">
+            <a class="facebook" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a class="instagram" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a class="twitter" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a class="linkedin" href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+
+        </div>
+    </footer>
+</body>
+</html>
