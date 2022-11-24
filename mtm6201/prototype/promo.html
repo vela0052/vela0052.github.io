@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link the Css menu style sheet -->
+  <link rel="stylesheet" href="css/promo.css">
+  <!-- Link for the Fonts and the Icons -->
+  <link rel="stylesheet" href="https://use.typekit.net/arl2ivw.css">
+  <script src="https://kit.fontawesome.com/7f4096dde2.js" crossorigin="anonymous"></script>
+  <!-- Title of the site -->
+  <title>Blue Ice Promo</title>
+  <link rel="shortcut icon" type="image" href="img/logo2.png"/>
+</head>
+
+<body>
+   <!-- Header with 3 items, the menu dropdown, the logo of the brand that redirects to the index
+         and the shopping cart icon -->
+  <header>
+    <!-- Nav for the dropdown menu for the different pages of the website with an icon of bars -->
+    <nav class="nav">
+      <div class="dropdown">
+        
+        <i class="fas fa-bars"></i>
+<!-- Inside the content of the dropdown menu are the logo, the title of the current page
+                and the pages  -->
+        <div class="dropdown-content">
+          <div class="info">
+            <div class="pp-img-dd">
+              <img src="./img/logoblack.png" alt="logo">
+              <h2>Promo</h2>
+            </div>
+          </div>
+          <ul>
+            <li><a href="./index.html" class="nav-link active">Home</a></li>
+            <li><a href="./menu.html" class="nav-link active">Menu</a></li>
+            <li><a href="./index.html" class="nav-link active">Flavours</a></li>
+            <li><a href="./index.html" class="nav-link active">Shapes</a> </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <a href="./index.html"><img class="logo" src="img/logoblack.png" alt="logo"></a>
+    <a class="cart" href="#"><img src="img/cart.png" alt="cart"></a>
+  </header>
+  <!-- In the main section, the content is The image, text, buttons and Popup for the promo code -->
+  <main>
+    <!-- Title, image container and subtitle with button to the menu page -->
+    <div class="promo-image">
+      <div class="promo-text">
+        <h1>Blue Ice Promotion</h1>
+        <p>Get your Promo code Now!</p>
+        <form action="./menu.html">
+          <input type="submit" value="Menu"/>
+        </form>
+      </div>
+      <!-- Link for the popup  and href linking the popup to appear in the page-->
+      <div class="promo-exclusions">
+        <a href="#popup1">
+          <p class="exclusions">I want my code</p>
+        </a>
+      </div>
+<!-- Popup with the promo code inside the content and text to send an email-->
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <br><br>
+            <h2>Promotional Code</h2>
+            <p>Send us an email</p> 
+            <br><br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer Section with the social media section and the Copyright, the address and email contact -->
+  <footer>
+    <div class="social">
+      <a class="facebook" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+      <a class="instagram" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+      <a class="twitter" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+      <a class="linkedin" href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="inf">
+      <h3>&copy; Copyright Blue Ice 2021</h3>
+      <p>626 Thompson St. J2Y 5R6</p>
+      <p>info@blueice.com</p>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

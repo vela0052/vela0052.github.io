@@ -1,0 +1,19 @@
+.btn{
+    color: #fff;
+    padding: 1rem 4rem;
+    font-size: 1rem;
+    border: solid 1px #111;
+    border-radius: 7px;
+    background-color: #666;
+    display: block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    /* font-family: 'Poppins', sans-serif; */
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}

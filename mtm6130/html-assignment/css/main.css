@@ -1,0 +1,53 @@
+body{
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+nav ul a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+nav ul a {
+    color: rgb(255, 255, 255);
+    text-decoration: none !important;
+}
+nav ul {
+    list-style: none;
+}
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    background-color: rgb(76, 0, 255);
+    box-shadow: 0px 0px 2px 2px black;  
+}   
+
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+    background-color: rgb(4, 70, 70);
+}
+
+nav ul a:active {
+    box-shadow: 0px 0px 4px 2px black;
+}
+    
+
+header,
+footer {
+    background-color: coral;
+}
+.site-title{
+    color: white;
+    text-decoration: underline;
+}
+#my-image{
+    box-shadow: 0px 0px 2px 1px black;
+}
+article ul{
+    list-style: square;
+}
+article ul li:nth-child(odd) {
+    background-color: red;
+}
+    
+
