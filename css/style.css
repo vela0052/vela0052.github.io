@@ -197,7 +197,7 @@ footer{
 
 }
 .copy h3{
-    font-size: 0.7rem;
+    font-size: 0.7rem !important;
 }
 .social{
      grid-area: social;
